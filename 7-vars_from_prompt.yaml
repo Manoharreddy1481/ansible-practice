@@ -3,8 +3,10 @@
   vars_prompt:
   - name: NAME
     prompt: Please enter your name
+    private: false
   - name: AGE
     prompt: Please enter your age
+    private: false
   tasks:
   - name: print the varibles from the prompt
     ansible.builtin.debug:
