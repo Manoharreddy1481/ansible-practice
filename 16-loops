@@ -5,5 +5,5 @@
     ansible.builtin.debug:
       msg: "my name is :{{item}}"
     loop:
-    - "Manohar"
-    - "Lucky"
+    - Manohar
+    - Lucky
