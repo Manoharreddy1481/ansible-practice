@@ -1,5 +1,6 @@
 - name: install nginx for redhat os
   hosts: web
+  become: yes
   tasks:
   - name: install nginx if it redhat os
     ansible.builtin.dnf:
