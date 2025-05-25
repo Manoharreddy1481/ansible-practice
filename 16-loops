@@ -1,0 +1,9 @@
+- name: loops demo
+  hosts: web
+  tasks: 
+  - name: print the names in a loop
+    ansible.builtin.debug:
+      msg: "my name is :{{item}}"
+    loop:
+    - "Manohar"
+    - "Lucky"
