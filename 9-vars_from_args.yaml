@@ -1,0 +1,6 @@
+- name: print the variable values from the inventory
+  hosts: web
+  tasks:
+  - name: print the variable values from the inventory
+    ansible.builtin.debug:
+      msg: "I am {{NAME}}, age is {{AGE}}"
