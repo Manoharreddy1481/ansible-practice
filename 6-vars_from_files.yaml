@@ -1,0 +1,8 @@
+- name: print the variable values form the file
+  hosts: web
+  vars_file:
+    vars.yaml
+  tasks:
+  - name: print the variable values from file
+    ansible.builtin.debug:
+      msg: "this is {{NAME}} and age is {{AGE}}"
