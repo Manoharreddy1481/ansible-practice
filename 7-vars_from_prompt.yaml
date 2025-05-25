@@ -1,0 +1,11 @@
+- name: print varibale values from the prompt
+  hosts: web
+  vars_prompt:
+  - name: NAME
+    prompt: Please enter your name
+  - name: AGE
+    prompt: Please enter your age
+  tasks:
+  - name: print the varibles from the prompt
+    ansible.builtin.debug:
+      msg: "My Name is :{{NAME}}, and Age is: {{AGE}}"
