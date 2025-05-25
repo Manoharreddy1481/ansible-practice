@@ -1,0 +1,9 @@
+- name: print the variables in the msg
+  hosts: web
+  vars:
+    NAME: "Manohar Reddy Pullagurla"
+    AGE: "26"
+  tasks:
+  - name: print the variables
+    ansible.builtin.debug:
+      msg: "Hi all, I am {{ NAME }} and age is {{ AGE }}"
