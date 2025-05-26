@@ -1,0 +1,6 @@
+- name: functions demo
+  hosts: web
+  tasks:
+  - name: print the default value
+    ansible.builtin.debug:
+      msg: "this is {{NAME | default('Manohar')}}"
