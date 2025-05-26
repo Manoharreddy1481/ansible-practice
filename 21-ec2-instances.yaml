@@ -1,0 +1,17 @@
+- name: create ec2 instances
+  hosts: local
+  connection: local
+  vars: 
+    subnet_id: subnet-09ff80e2c8275631a
+    ami_id: ami-09c813fb71547fc4f
+    sg_id: sg-006f441492588b678
+    instances:
+    - mysql
+    - backend
+    - frontend
+    zone: manohar.fun
+  tasks:
+  - name: install boto3 and botocore
+    ansible.builtin.pip:
+      name: boto3 botocore
+      executable: pip3.9
