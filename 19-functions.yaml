@@ -8,4 +8,6 @@
     vars:
       NAME: "ManoHAR"
     ansible.builtin.debug:
-      msg: "this is {{NAME | upper }}"
+      msg: "this is {{NAME | upper }} this is {{NAME| lower}}"
+
+    
