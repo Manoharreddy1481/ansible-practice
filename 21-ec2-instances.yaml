@@ -12,6 +12,6 @@
     zone: manohar.fun
   tasks:
   - name: install boto3 and botocore
-    ansible.builtin.pip:
+    ansible.builtin.pip3.9:
       name: boto3 botocore
       executable: pip3.9
