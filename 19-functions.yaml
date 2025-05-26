@@ -17,7 +17,7 @@
       msg: "minimum number is {{numbers | min}}, maximum number is {{numbers | max}}"
   - name: check the ip address valid or not
     vars:
-      my_ip: 192.1.1.1
+      my_ip: 350.1.1.1
     ansible.builtin.debug:
       msg: "this is {{my_ip | ansible.utils.ipv4}}"
 
