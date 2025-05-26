@@ -1,5 +1,6 @@
 - name: functions demo
   hosts: web
+  become: yes
   tasks:
   - name: print the default value
     ansible.builtin.debug:
