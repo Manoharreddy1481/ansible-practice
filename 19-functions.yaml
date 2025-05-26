@@ -16,7 +16,7 @@
     ansible.builtin.debug:
       msg: "minimum number is {{numbers | min}}, maximum number is {{numbers | max}}"
   - name: install netaddr
-    ansible.builtin.package:
+    ansible.builtin.pip:
       name: netaddr
       state: present
   - name: check the ip address valid or not
