@@ -18,7 +18,7 @@
   - name: install netaddr
     ansible.builtin.pip:
       name: netaddr
-      state: present
+      executable: pip3.9
   - name: check the ip address valid or not
     vars:
       my_ip: 192.1.1.1
