@@ -4,10 +4,15 @@
   - name: print the default value
     ansible.builtin.debug:
       msg: "this is {{NAME | default('Manohar')}}"
-  - name: print the default value
+  - name: print the variable in uppercase and lower case
     vars:
       NAME: "ManoHAR"
     ansible.builtin.debug:
       msg: "this is {{NAME | upper }} this is {{NAME| lower}}"
+  - name: print the max and min numbers
+    vars:
+      numbers: [1,2,3,4,5,6]
+    ansible.builtin.debug:
+      msg: "minimum number is {{numbers | min}}, maximum number is {{numbers | max}}"
 
     
